@@ -59,3 +59,6 @@ body {
         transform: rotateX(25deg) translateZ(-2500px);
     }
   }
+span {
+    color: rgb(69, 139, 172);
+}
