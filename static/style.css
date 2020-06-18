@@ -1,0 +1,18 @@
+body {
+    background-image:url(https://wallpaperaccess.com/full/19827.jpg);
+    background-size: cover;
+}
+.container {
+    height: 100%;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2em;
+    color: yellow;
+    word-break: break-all;
+    margin: auto;
+}
+.container-0 {
+    color: blue;
+}
