@@ -1,18 +1,61 @@
 body {
-    background-image:url(https://wallpaperaccess.com/full/19827.jpg);
-    background-size: cover;
-}
-.container {
+    width: 100%;
     height: 100%;
-    width: 15em;
+    background-image: url(https://mangadex.org/images/groups/2908.jpg?1585963445);
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
+  .fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+  
+  .star-wars {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    font-size: 2em;
-    color: yellow;
-    word-break: break-all;
-    margin: auto;
-}
-.container-0 {
-    color: blue;
-}
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-size: 300%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 45s 1s linear;
+  }
+  
+  .crawl > .title {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  .crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+  }
+  .title {
+      color: blue;
+  }
+  
+  @keyframes crawl {
+    0% {
+        top:0;
+        transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
